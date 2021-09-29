@@ -1,0 +1,16 @@
+[package]
+name = "async_dl"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "async-dl"
+path = "src/main.rs"
+
+
+[dependencies]
+reqwest = { version = "0.11.4", features = ["blocking"] }
+tokio = { version = "1.12.0", features = ["full"] }
+futures = "0.3.17"
